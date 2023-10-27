@@ -3,7 +3,7 @@ const users  = require("../database.js");
 const bcrypt = require("bcrypt");
 const jwtGenerator = require("../utils/jwtGenerator.js");
 const validInfo = require("../middleware/validInfo.js");
-const authorization = require("../middleware/authorization.js")
+const authorization = require("../middleware/authorization.js");
 
 
 //registering

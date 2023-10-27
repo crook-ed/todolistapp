@@ -10,7 +10,11 @@ app.use(cors());
 
 //ROUTES//
 //register and login routes
-app.use("/auth", require("./routes/jwtAuth"))
+app.use("/auth", require("./routes/jwtAuth"));
+
+//dashboard route
+app.use("/dashboard", require("./routes/dashboard"))
+
 db.authenticate()
     .then(() => console.log('databse connected...'))
     .catch(err => console.log('Error: ' + err));
